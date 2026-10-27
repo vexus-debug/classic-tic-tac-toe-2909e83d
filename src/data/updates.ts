@@ -13,6 +13,15 @@ export interface UpdateEntry {
 
 export const updates: UpdateEntry[] = [
   {
+    version: "v2.3.2",
+    date: "October 27, 2026",
+    title: "Clearer homepage backdrops",
+    kind: "improvement",
+    items: [
+      { kind: "improvement", text: "Background screens now start from The Problem We Solve section and are much more visible." },
+    ],
+  },
+  {
     version: "v2.3.1",
     date: "October 27, 2026",
     title: "More visible homepage backdrops",
