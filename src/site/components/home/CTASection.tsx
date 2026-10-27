@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import ParallaxBackdrop from "./ParallaxBackdrop";
+import chartsAsset from "@/assets/current-dashboard/dental-charts.png.asset.json";
 
 const CTASection = () => {
   return (
-    <section className="relative site-section-tint overflow-hidden py-24">
-      <div className="pointer-events-none absolute inset-0 bg-muted/20" />
+    <section className="relative site-band-theater overflow-hidden py-24">
+      <ParallaxBackdrop src={chartsAsset.url} speed={0.15} opacity={0.14} />
       <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
