@@ -13,6 +13,17 @@ export interface UpdateEntry {
 
 export const updates: UpdateEntry[] = [
   {
+    version: "v2.3.0",
+    date: "October 27, 2026",
+    title: "Homepage depth, motion and a clearer FAQ",
+    kind: "improvement",
+    items: [
+      { kind: "improvement", text: "Homepage sections now blend into each other, and real Clinexus screens drift softly behind key sections as you scroll." },
+      { kind: "improvement", text: "Money and team sections now show real clinic figures, staff activity and role access instead of generic icons." },
+      { kind: "improvement", text: "The FAQ is now grouped by topic, with a quick WhatsApp option to book a 15-minute walkthrough." },
+    ],
+  },
+  {
     version: "v2.2.9",
     date: "October 27, 2026",
     title: "Homepage opening photo",

@@ -1,13 +1,18 @@
 import { motion } from "framer-motion";
-import { BarChart3, CheckCircle2 } from "lucide-react";
 import profitabilityAsset from "@/assets/current-dashboard/dental-profitability.png.asset.json";
 
 const profitabilityScreenshot = profitabilityAsset.url;
 
+const marginChips = [
+  { label: "Root Canal", value: "68% margin" },
+  { label: "Staff commission", value: "Auto-calculated" },
+  { label: "Audit export", value: "One click" },
+  { label: "Trends", value: "Flagged early" },
+];
+
 const AnalyzeSection = () => {
   return (
-    <section className="relative site-section-light overflow-hidden py-20 md:py-28">
-      <div className="pointer-events-none absolute inset-0 bg-muted/20" />
+    <section className="relative site-band-porcelain overflow-hidden py-20 md:py-28">
       <div className="container relative z-10">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <motion.div
@@ -16,8 +21,15 @@ const AnalyzeSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-              <BarChart3 className="h-6 w-6 text-primary" />
+            <div className="mb-6 flex flex-wrap gap-3">
+              <div className="site-hairline rounded-md bg-card px-4 py-3">
+                <div className="text-[11px] uppercase tracking-widest text-muted-foreground">Collected today</div>
+                <div className="font-mono text-xl font-semibold text-foreground">₦4,850,000</div>
+              </div>
+              <div className="site-hairline rounded-md bg-card px-4 py-3">
+                <div className="text-[11px] uppercase tracking-widest text-muted-foreground">Avg chair yield</div>
+                <div className="font-mono text-xl font-semibold text-primary">+28%</div>
+              </div>
             </div>
             <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
               Finally See Where Your Money Really Comes From
@@ -25,19 +37,15 @@ const AnalyzeSection = () => {
             <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
               See which treatments make you the most money, which patients keep coming back, and where every naira goes, updated in real time, ready to export whenever you need it.
             </p>
-            <ul className="space-y-3">
-              {[
-"Know exactly which treatments actually make you money",
-"Staff commissions calculated for you, every time",
-"Spot trends before they hurt your bottom line",
-"Reports ready to print or send, in one click",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-3 text-foreground">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 text-primary" />
-                  <span className="font-medium">{item}</span>
+            <ul className="flex flex-wrap gap-2">
+              {marginChips.map((c) => (
+                <li key={c.label} className="site-chip">
+                  <span className="text-muted-foreground">{c.label}</span>
+                  <span className="font-semibold">{c.value}</span>
                 </li>
               ))}
             </ul>
+            <p className="mt-3 text-xs text-muted-foreground">Example figures from a sample clinic.</p>
           </motion.div>
 
           <motion.div

@@ -25,7 +25,7 @@ const HowItWorksSection = () => {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="site-section-tint py-20 md:py-28">
+    <section className="site-band-porcelain py-20 md:py-28">
       <div className="container">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <motion.header
