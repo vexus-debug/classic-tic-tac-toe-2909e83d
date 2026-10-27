@@ -13,6 +13,15 @@ export interface UpdateEntry {
 
 export const updates: UpdateEntry[] = [
   {
+    version: "v2.3.1",
+    date: "October 27, 2026",
+    title: "More visible homepage backdrops",
+    kind: "improvement",
+    items: [
+      { kind: "improvement", text: "The Clinexus screens behind homepage sections are now easier to see." },
+    ],
+  },
+  {
     version: "v2.3.0",
     date: "October 27, 2026",
     title: "Homepage depth, motion and a clearer FAQ",
