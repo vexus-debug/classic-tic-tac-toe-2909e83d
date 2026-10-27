@@ -28,7 +28,7 @@ const panelClass =
 
 const FeaturesOverviewSection = () => {
   return (
-    <section className="relative bg-[hsl(var(--medical-blue-dark))] py-24 md:py-32">
+    <section className="relative site-band-theater py-24 md:py-32">
       <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 16 }}

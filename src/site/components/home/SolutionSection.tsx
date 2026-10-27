@@ -196,7 +196,7 @@ const SolutionSection = () => {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="site-section-light relative overflow-hidden py-20 md:py-28">
+    <section className="site-band-porcelain relative overflow-hidden py-20 md:py-28">
       <div className="container relative z-10 flex w-full flex-col">
         <div className="max-w-2xl">
           <motion.div

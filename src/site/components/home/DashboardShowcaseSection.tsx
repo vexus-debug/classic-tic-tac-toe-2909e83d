@@ -3,6 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import ParallaxBackdrop from "./ParallaxBackdrop";
 
 import dashboardAsset from "@/assets/current-dashboard/dental-dashboard.png.asset.json";
 import patientsAsset from "@/assets/current-dashboard/dental-patients.png.asset.json";
@@ -49,8 +50,8 @@ const DashboardShowcaseSection = () => {
   const current = tabs.find((t) => t.key === active)!;
 
   return (
-    <section className="relative site-section-tint overflow-hidden py-20 md:py-28">
-      <div className="pointer-events-none absolute inset-0 bg-muted/20" />
+    <section className="relative site-band-theater overflow-hidden py-20 md:py-28">
+      <ParallaxBackdrop src={dashboardAsset.url} speed={0.22} opacity={0.2} />
       <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
