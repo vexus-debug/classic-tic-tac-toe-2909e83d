@@ -19,7 +19,7 @@ const CollaborateSection = () => {
 
   return (
     <section ref={ref} className="relative site-band-obsidian overflow-hidden py-20 md:py-28">
-      <ParallaxBackdrop src={chartsAsset.url} speed={0.18} opacity={0.3} />
+      <ParallaxBackdrop src={chartsAsset.url} speed={0.18} opacity={0.45} />
       <div className="container relative z-10">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <motion.div

@@ -10,6 +10,8 @@ import {
   HiExclamationTriangle,
 } from "react-icons/hi2";
 import { Card, CardContent } from "@/components/ui/card";
+import ParallaxBackdrop from "./ParallaxBackdrop";
+import chartsAsset from "@/assets/current-dashboard/dental-charts.png.asset.json";
 import { Button } from "@/components/ui/button";
 
 const panelShadow =
@@ -197,6 +199,7 @@ const SolutionSection = () => {
 
   return (
     <section className="site-band-porcelain relative overflow-hidden py-20 md:py-28">
+      <ParallaxBackdrop src={chartsAsset.url} speed={0.2} opacity={0.45} />
       <div className="container relative z-10 flex w-full flex-col">
         <div className="max-w-2xl">
           <motion.div
