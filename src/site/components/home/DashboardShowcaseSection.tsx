@@ -51,7 +51,7 @@ const DashboardShowcaseSection = () => {
 
   return (
     <section className="relative site-band-theater overflow-hidden py-20 md:py-28">
-      <ParallaxBackdrop src={dashboardAsset.url} speed={0.22} opacity={0.45} />
+      <ParallaxBackdrop src={dashboardAsset.url} speed={0.22} opacity={0.3} />
       <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

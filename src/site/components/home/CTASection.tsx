@@ -8,7 +8,7 @@ import chartsAsset from "@/assets/current-dashboard/dental-charts.png.asset.json
 const CTASection = () => {
   return (
     <section className="relative site-band-theater overflow-hidden py-24">
-      <ParallaxBackdrop src={chartsAsset.url} speed={0.15} opacity={0.45} />
+      <ParallaxBackdrop src={chartsAsset.url} speed={0.15} opacity={0.3} />
       <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
